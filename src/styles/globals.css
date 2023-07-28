@@ -1,0 +1,139 @@
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* @font-face {
+  font-family: 'Fira Sans';
+  src: url('../../public/asset/Fira_Sans/FiraSans-ExtraLight.ttf');
+  font-weight: 200;
+  font-style:  normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../../public/asset/Fira_Sans/FiraSans-Light.ttf');
+  font-weight: 300;
+  font-style:  normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../../public/asset/Fira_Sans/FiraSans-Regular.ttf');
+  font-weight: 400;
+  font-style:  normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../../public/asset/Fira_Sans/FiraSans-Medium.ttf');
+  font-weight: 500;
+  font-style:  normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../public/asset/Inter-ExtraLight.ttf');
+  font-weight: 400;
+  font-style:  normal;
+  font-display: swap;
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: 255, 255, 255;
+  font-family: 'Fira Sans', 'Inter', sans-serif;
+}
+
+[data-amplify-authenticator] {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+[data-amplify-authenticator] [data-amplify-router] {
+  border-style: unset !important;
+  background: #fff;
+  box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.10), 0px 4px 6px -1px rgba(16, 24, 40, 0.10) !important;
+}
+
+[data-amplify-authenticator] .amplify-button--primary {
+  background: #09549f !important;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+[data-amplify-authenticator] .amplify-textfield {
+  margin: 1rem 0;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+[data-amplify-authenticator] .amplify-input {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+[data-amplify-authenticator] .amplify-input:focus {
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+[data-amplify-authenticator] .amplify-field-group__outer-end {
+  display: none;
+}
+
+.react-datepicker-wrapper {
+  width: -webkit-fill-available;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.react-datepicker__input-container {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 5%);
+  border-radius: 6px;
+  background-color: white;
+}
+
+.react-datepicker-wrapper .DatePick-input {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 5%);
+  border-radius: 6px;
+  background-color: white;
+
+  width: -webkit-fill-available;
+  height: 40px;
+
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.react-datepicker-popper {
+  z-index: 10001;
+}
+
+.react-datepicker
+  .react-datepicker__input-time-container
+  .react-datepicker-time__caption {
+  margin-left: 1rem;
+}

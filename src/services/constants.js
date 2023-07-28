@@ -1,0 +1,122 @@
+export const severityBgColor = {
+  'action required': "#fef2f2",
+  'complete': "#f0fdf4",
+};
+
+export const severityColor = {
+  'action required': "#b91c1c",
+  'complete': "#15803d",
+};
+
+export const serviceAreas = {
+  "Central Queensland":
+    [
+      "Barcaldine",
+      "Biloela",
+      "Blackall",
+      "Blackwater",
+      "Bowen",
+      "Clermont",
+      "Collinsville",
+      "Dysart",
+      "Emerald",
+      "Gladstone",
+      "Longreach",
+      "Mackay",
+      "Moranbah",
+      "Mt Morgan",
+      "Moura",
+      "Rockhampton",
+      "Town of 1770/Agnes Water",
+      "Winton",
+      "Yeppoon"
+    ],
+  "Gold Coast Region":
+    [
+      "Beaudesert",
+      "Gold Coast",
+      "Macleay Island",
+      "North Stradbroke Island",
+      "Russell Island",
+      "Tamborine Canungra"
+    ],
+  "Northern Queensland":
+    [
+      "Atherton",
+      "Ayr",
+      "Bamaga",
+      "Cairns",
+      "Cardwell",
+      "Charters Towers",
+      "Cloncurry",
+      "Cooktown",
+      "Gordonvale Yarrabah",
+      "Horn Island",
+      "Ingham",
+      "Innisfail",
+      "Karumba",
+      "Kuranda",
+      "Magnetic Island",
+      "Mareeba",
+      "Mission Beach",
+      "Mossman",
+      "Mt Isa",
+      "Normanton",
+      "Port Douglas",
+      "Ravenshoe",
+      "Thursday Island",
+      "Townsville",
+      "Thuringowa",
+      "Tully"
+    ],
+  "South-East Queensland":
+    ["Boonah",
+      "Bribie Island",
+      "Brisbane",
+      "Gatton",
+      "Glasshouse Beerwah",
+      "Ipswich",
+      "Kilcoy",
+      "Laidley",
+      "Lowood",
+      "Maleny",
+      "Moreton Island",
+      "Redcliffe",
+      "Sunshine Coast",
+      "Toogoolawah",
+      "Woodford"
+    ],
+  "Southern Queensland":
+    [
+      "Bundaberg",
+      "Charleville",
+      "Childers",
+      "Chinchilla",
+      "Crows Nest",
+      "Cunnamulla",
+      "Dalby",
+      "K’gari (formerly Fraser Island)",
+      "Gayndah",
+      "Goondiwindi",
+      "Gympie",
+      "Hervey Bay",
+      "Kingaroy",
+      "Maryborough",
+      "Mitchell",
+      "Monto",
+      "Mundubbera",
+      "Murgon",
+      "Nanango",
+      "Oakey",
+      "Pittsworth",
+      "Rainbow Beach",
+      "Roma",
+      "St George",
+      "Stanthorpe",
+      "Tara",
+      "Tin Can Bay",
+      "Toowoomba",
+      "Warwick",
+      "Wondai"
+    ]
+}
