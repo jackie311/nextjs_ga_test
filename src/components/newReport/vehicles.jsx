@@ -230,6 +230,7 @@ export default function Vehicles({setEnableSubmit, enableSubmit}) {
 
         return [props?.row?.rego, props?.row?.vehicle_auth_ref, props?.row?.date_from, props?.row?.date_TO].every(str => !str) ?
           [] : [<GridActionsCellItem
+          key={props?.row?.vehicle_auth_ref}
             icon={<DeleteIcon sx={{ color: "#a9a9a9" }} />}
             label="Delete"
             // onClick={handleDeleteClick(id)}

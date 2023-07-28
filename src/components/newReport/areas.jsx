@@ -124,6 +124,7 @@ export default function Areas() {
       getActions: (props) => {
         return [props?.row?.region, props?.row?.area].every(str => str === '') ?
           [] : [<GridActionsCellItem
+          key={props?.row?.region}
             icon={<DeleteIcon sx={{ color: "#a9a9a9" }} />}
             label="Delete"
             // onClick={handleDeleteClick(id)}
@@ -151,6 +152,7 @@ export default function Areas() {
     return () => {
       clearTimeout(promiseTimeout);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleProcessRowUpdate = (updatedRow, originalRow) => {

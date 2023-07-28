@@ -153,6 +153,7 @@ export default function Drivers() {
 
         return [props?.row?.driver_auth_ref, props?.row?.start, props?.row?.end_date].every(str => !str) ?
           [] : [<GridActionsCellItem
+          key={props?.row?.driver_auth_ref}
             icon={<DeleteIcon sx={{ color: "#a9a9a9" }} />}
             label="Delete"
             // onClick={handleDeleteClick(id)}
@@ -189,6 +190,7 @@ export default function Drivers() {
     return () => {
       clearTimeout(promiseTimeout);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleProcessRowUpdate = (updatedRow, originalRow) => {
